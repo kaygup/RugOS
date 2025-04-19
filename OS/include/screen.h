@@ -102,7 +102,8 @@ void printch(char c)
 void print (string ch)
 {
     uint16 i = 0;
-    for(i;i<strlenght(ch);i++)
+    uint8 lenght = strlenght(ch);
+    for(i;i<lenght;i++)
     {
         printch(ch[i]);
     }
