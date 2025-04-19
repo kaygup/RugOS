@@ -10,6 +10,10 @@ string readStr()
     string buffstr;
     uint8 i = 0;
     uint8 reading = 1;
+    for (int j = 0;j < 256; j++)
+        {
+                buffstr[j] = 0;
+        }
     while(reading)
     {
         if(inportb(0x64) & 0x1)                 
